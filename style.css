@@ -1,0 +1,454 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+/* Your existing body and html styles */
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    background-color: black;
+    width: 100%;
+    max-width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: -38px; /*hero*/
+}
+
+.overlay-1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px; /*hero*/
+    z-index: 0; /*hero*/
+}
+
+/* Responsive design */
+@media screen and (max-width: 1440px) {
+    .hero {
+        width: 100%;
+        height: auto;
+        min-height: 800px;
+    }
+}
+
+
+
+
+
+
+
+
+nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: black;
+    padding: 20px 40px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2; /*hero*/
+    position: relative; /*hero*/
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    align-content: center;
+    position: relative;
+    z-index: 2; /*hero*/
+}
+
+#Logo {
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    z-index: 2;
+}
+
+label {
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+}
+
+.menuc {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.menuc a {
+    padding: 8px;
+    transition: 0.5s ease-in-out;
+}
+
+.menuc a::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: red;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    z-index: 5;
+}
+
+.menuc a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+/* Media queries */
+/* Navigation */
+@media (max-width: 800px) {
+label {
+        display: block;
+    }
+
+    .menuc {
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        justify-content: center;
+        background-color: black;
+        text-align: center;
+        gap: 32px;
+        top: 40px;
+        width: 100%;
+        height: calc(100vh - 80px);
+        left: -100%;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    #Logo{
+      position: relative;
+      margin-right: 200px;
+    }
+
+
+    input[type="checkbox"]:checked ~ .menuc {
+        left: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.content-1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 100px 40px;
+}
+
+.content-2 {
+  padding: 80px 40px;
+  background-color: #ED1C24;
+  color: white;
+}
+
+.heading {
+  font-size: 60px;
+  margin: 20px 0;
+}
+
+.bartell-records-text {
+  margin: 10px 0;
+  line-height: 30px;
+}
+
+.subheading-bottom-1 {
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+}
+
+.subheading-bottom-2 {
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+}
+
+.text-bottom-1 {
+  display: flex;
+  justify-content:space-between;
+  gap: 10px;
+  line-height: 30px;
+}
+
+.love-music-bottom-1 {
+  margin: 20px 0;
+}
+
+.love-music-bottom-2 {
+  margin: 20px 0;
+}
+
+button {
+  margin: 20px 0;
+  background-color: red;
+  border: 0;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  transition: all .8s ease-in-out;
+}
+
+.button1:hover {
+  background-color: #FF6565;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 70% opacity */
+    pointer-events: none; /* Ensure the overlay doesn't block any interactions */
+    z-index: 1; /* Ensure the overlay is above the background */
+    padding: 40px;
+}
+
+.placeholder-image-icon1 {
+  display: flex;
+  max-width: 100%;
+  min-width: 40%;
+  height: 600px;
+  position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.text-top-2-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 100%;
+}
+
+.text-top-2 {
+  flex: 2;
+  max-width: 100%;
+}
+
+.blank {
+  flex: 1;
+  max-width: 100%;
+}
+
+.bottom-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bottom-item-1 {
+  flex: 1 1 30%; /* Base width of approximately one-third */
+  max-width: calc(33.333% - 20px); /* Adjust width to fit three items in a row minus the gap */
+  display: flex;
+  flex-direction: column;
+}
+
+.placeholder-image-icon2 {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  object-position: ;
+
+}
+
+.subheading-artists {
+  font-size: 30px;
+  margin: 20px 0;
+
+}
+
+.bartell-records-text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 1024px) {
+
+
+  .content-1 {
+    flex-direction: column;
+  }
+
+  .text-top-2-container {
+    flex-direction: column;
+  }
+
+
+
+  .bottom-item-1 {
+    flex: 1 1 calc(50% - 20px); /* Two items per row */
+    max-width: calc(50% - 20px);
+  }
+
+  .bottom-container .bottom-item-1:nth-child(3) {
+    flex: 1 1 100%; /* Make the third item full width */
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .bottom-item-1 {
+    flex: 1 1 100%; /* One item per row */
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+/* General Footer Styling */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Top Section Styling */
+.footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+/* Logo Section Styling */
+.footer-logo {
+    flex: 1 1 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-logo img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Links Section Styling */
+.footer-links {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    left: 90px;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+}
+
+.footer-links a {
+    margin: 0 10px;
+}
+
+/* Newsletter Section Styling */
+.footer-newsletter {
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Divider Bar Styling */
+.footer-divider {
+    height: 2px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+/* Bottom Section Styling */
+.footer-bottom {
+    padding: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom a {
+    margin: 0 5px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+    }
+    .footer-links {
+        margin: 20px 0;
+        position: relative;
+        left: 0px;
+    }
+    .footer-newsletter {
+        justify-content: center;
+    }
+}
