@@ -20,7 +20,7 @@
     background-color: black;
     width: 100%;
     max-width: 100%;
-    height: 800px;
+    height: 720px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,7 +56,40 @@
       position: relative;
       z-index: 1; /* Ensure it's above the hero section */
     }
+
+
+
+    .announcement {
+        font-size: 20px !important; /* Adjust font size for smaller screens */
+        z-index: 2;
+        position: relative;
+        top: 545px;
+ 
+    }
+
+
 }
+
+
+
+
+
+.announcement {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: 1; /* Ensure it's above other elements */
+    font-family: 'Roboto', sans-serif;
+    padding: 30px;
+}    
+
 
 
 
@@ -67,10 +100,11 @@ nav {
     align-content: center;
     justify-content: space-around;
     background-color: black;
-    padding: 20px 40px;
+    padding: 10px 40px;
     font-family: 'Roboto', sans-serif;
     z-index: 2; /*hero*/
     position: relative; /*hero*/
+    height: 30px;
 }
 
 nav a {
@@ -85,6 +119,7 @@ nav a {
     font-size: 16px;
     font-weight: 600;
     padding-left: 10px;
+    margin-top: 6px;
 }
 
 input[type="checkbox"] {
@@ -116,7 +151,7 @@ label {
 .menuc a::before {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 32px;
     bottom: 0;
     left: 50%;
     width: 0;
