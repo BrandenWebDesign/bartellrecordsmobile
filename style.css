@@ -191,7 +191,7 @@ label {
 
     #Logo{
       position: relative;
-      margin-right: 180px;
+      margin-right: 200px;
       margin-top: 6;
       white-space: nowrap;
     }
@@ -201,6 +201,14 @@ label {
         left: 0;
     }
 
+}
+
+@media screen and (max-width: 517px) {
+    #Logo{
+      position: relative;
+      margin-right: 180px; /*bar menu move on small screen*/
+
+    }
 }
 
 
