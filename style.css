@@ -191,7 +191,7 @@ label {
 
     #Logo{
       position: relative;
-      margin-right: 200px;
+      margin-right: 180px;
       margin-top: 6;
       white-space: nowrap;
     }
@@ -228,12 +228,15 @@ label {
   align-items: center;
   background-color: black;
   color: white;
-  padding: 100px 40px;
+  padding: 60px 40px;
 }
 
 .content-2 {
-  padding: 80px 40px;
-  background-color: #ED1C24;
+  padding: 60px 40px;
+  background-image: url("./images/Content-2-Background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: white;
 }
 
@@ -290,10 +293,10 @@ button {
 }
 
 .overlay {
-    background-color: rgba(0, 0, 0, 0.3); /* Black overlay with 70% opacity */
+    background-color: rgba(0, 0, 0, .); /* Black overlay with 70% opacity */
     pointer-events: none; /* Ensure the overlay doesn't block any interactions */
     z-index: 1; /* Ensure the overlay is above the background */
-    padding: 40px;
+    padding: px;
 }
 
 .placeholder-image-icon1 {
@@ -334,6 +337,8 @@ button {
   flex: 1 1 30%; /* Base width of approximately one-third */
   max-width: calc(33.333% - 20px); /* Adjust width to fit three items in a row minus the gap */
   display: flex;
+  background-color: #9E0000;
+  padding: 20px;
   flex-direction: column;
 }
 
@@ -372,8 +377,8 @@ button {
 
 
   .bottom-item-1 {
-    flex: 1 1 calc(50% - 20px); /* Two items per row */
-    max-width: calc(50% - 20px);
+    flex: 1 1 calc(50% - 10px); /* Two items per row */
+    max-width: calc(50% - 10px);
   }
 
   .bottom-container .bottom-item-1:nth-child(3) {
