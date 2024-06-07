@@ -17,7 +17,7 @@
 }
 
 .hero {
-    background-color: black;
+    background-color: #E10000;
     width: 100%;
     max-width: 100%;
     height: 720px;
@@ -26,7 +26,11 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    margin-top: -38px; /*hero*/
+    background-image: url("./images/Bartell Records Header Logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center calc(50% - 50px);
+    background-size: 50%;
 }
 
 .overlay-1 {
@@ -36,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 120px; /*hero*/
+    margin-top: 0px; /*hero*/
     z-index: 0; /*hero*/
 }
 
@@ -74,6 +78,24 @@
 
 
 
+@media screen and (max-width:800px) {
+
+    .hero {
+        background-image: url("./images/Bartell Records Header Logo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center calc(50% - 50px);
+        background-size: 90%;
+    }
+}
+
+
+
+
+
+
+
+
 .announcement {
     position: absolute;
     bottom: 0;
@@ -104,7 +126,7 @@ nav {
     font-family: 'Roboto', sans-serif;
     z-index: 2; /*hero*/
     position: relative; /*hero*/
-    height: 30px;
+    height: 60px;
 }
 
 nav a {
@@ -171,6 +193,9 @@ label {
 @media (max-width: 800px) {
 label {
         display: block;
+        align-content: center;
+        position: relative;
+        left: 20px;
     }
 
     .menuc {
@@ -203,12 +228,7 @@ label {
 
 }
 
-@media screen and (max-width: 517px) {
-    #Logo{
-      position: relative;
-      margin-right: 180px; /*bar menu move on small screen*/
 
-    }
 }
 
 
@@ -237,6 +257,9 @@ label {
   background-color: black;
   color: white;
   padding: 60px 40px;
+  margin-top: -100px; /* Adjust the value as needed to overlay the content on the hero section */
+  position: relative;
+  z-index: 1; /* Ensure it's above the hero section */
 }
 
 .content-2 {
@@ -246,6 +269,10 @@ label {
   background-position: center;
   background-size: cover;
   color: white;
+}
+
+.subheading-top-1 {
+    color: darkred;
 }
 
 .heading {
