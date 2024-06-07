@@ -229,9 +229,12 @@ label {
 }
 
 
+
+@media (max-width: 460px) {
+    label {
+        left: -20px; /* Adjust this value as needed to keep moving left */
+    }
 }
-
-
 
 
 
