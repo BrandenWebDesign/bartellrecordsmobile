@@ -20,13 +20,13 @@
     background-color: #E10000;
     width: 100%;
     max-width: 100%;
-    height: 720px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: url("Bartell Records Header Logo.png");
+    background-image: url("./images/Bartell Records Header Logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center calc(50% - 50px);
@@ -56,9 +56,10 @@
 @media screen and (max-width: 517px) {
  
     .content-1 {
-      margin-top: -200px; /* Adjust the value as needed to overlay the content on the hero section */
+      top: -60px; /* Adjust the value as needed to overlay the content on the hero section */
       position: relative;
       z-index: 1; /* Ensure it's above the hero section */
+      margin-bottom: -60px;
     }
 
 
@@ -81,7 +82,7 @@
 @media screen and (max-width:800px) {
 
     .hero {
-        background-image: url("Bartell Records Header Logo.png");
+        background-image: url("./images/Bartell Records Header Logo.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center calc(50% - 50px);
@@ -267,7 +268,7 @@ label {
 
 .content-2 {
   padding: 60px 40px;
-  background-image: url("Content-2-Background.png");
+  background-image: url("./images/Content-2-Background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -485,7 +486,6 @@ button {
     flex: 1 1 50%;
     display: flex;
     justify-content: center;
-    left: 90px;
     flex-wrap: wrap;
     gap: 20px;
     position: relative;
@@ -533,8 +533,10 @@ button {
         margin: 20px 0;
         position: relative;
         left: 0px;
+        justify-content: center;
     }
     .footer-newsletter {
         justify-content: center;
+        margin-top: 20px;
     }
 }
