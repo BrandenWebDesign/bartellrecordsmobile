@@ -56,10 +56,10 @@
 @media screen and (max-width: 517px) {
  
     .content-1 {
-      top: -60px; /* Adjust the value as needed to overlay the content on the hero section */
+      top: -100px; /* Adjust the value as needed to overlay the content on the hero section */
       position: relative;
       z-index: 1; /* Ensure it's above the hero section */
-      margin-bottom: -60px;
+      margin-bottom: -100px;
     }
 
 
