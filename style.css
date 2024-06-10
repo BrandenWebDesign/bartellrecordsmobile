@@ -26,7 +26,7 @@
     align-items: center;
     position: relative;
     overflow: hidden;
-    background-image: url("./images/Bartell Records Header Logo.png");
+    background-image: url("images/Bartell Records Header Logo.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center calc(50% - 50px);
@@ -82,7 +82,7 @@
 @media screen and (max-width:800px) {
 
     .hero {
-        background-image: url("./images/Bartell Records Header Logo.png");
+        background-image: url("images/Bartell Records Header Logo.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center calc(50% - 50px);
@@ -268,7 +268,7 @@ label {
 
 .content-2 {
   padding: 60px 40px;
-  background-image: url("./images/Content-2-Background.png");
+  background-image: url("images/Content-2-Background.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
