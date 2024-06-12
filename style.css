@@ -53,13 +53,13 @@
     }
 }
 
-@media screen and (max-width: 517px) {
+@media screen and (max-width: 616px) {
  
     .content-1 {
-      top: -100px; /* Adjust the value as needed to overlay the content on the hero section */
+      top: -90px; /* Adjust the value as needed to overlay the content on the hero section */
       position: relative;
       z-index: 1; /* Ensure it's above the hero section */
-      margin-bottom: -100px;
+      margin-bottom: -90px;
     }
 
 
